@@ -1,7 +1,7 @@
 import { NativeScriptConfig } from '@nativescript/core';
 
 export default {
-  id: 'org.nativescript.reazerapp',
+  id: 'com.reazer.reazerapp',
   appPath: 'src',
   appResourcesPath: 'App_Resources',
   android: {
