@@ -1,0 +1,15 @@
+/**
+ * Orange variable overrides
+ **/
+
+// Accent
+$accent: #ff4500;
+
+// Complementary
+$complementary: #ff4500;
+$complementary-color: const(white);
+
+// Buttons
+$btn-color-inverse: const(white);
+@import '~@nativescript/theme/scss/core/colors/index';
+@import '~@nativescript/theme/scss/index';

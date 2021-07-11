@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MirrorService } from '~/app/services/mirror.service';
 
 @Component({
     selector: 'ns-home',
@@ -8,9 +9,15 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
   constructor(
-    public router: Router
+    public router: Router,
+    private mirror$: MirrorService
   ) { }
 
   ngOnInit(): void {
   }
+
+  public toggleScreen() {
+    this.mirror$.toggleScreen().subscribe();
+  }
+
 }

@@ -1,0 +1,9 @@
+<StackLayout>
+  <Button text="Random Quote" (tap)="randomQuote()" class="-primary"></Button>
+
+  <StackLayout class="hr-light bottom-space" height="1" backgroundColor="#c2c2c2"></StackLayout>
+
+  <MDTextField #quote hint="Quote" variant="outline"></MDTextField>
+  <MDTextField #author hint="Author" variant="outline"></MDTextField>
+  <Button text="Set Quote" (tap)="customQuote(quote.text, author.text)" class="-primary"></Button>
+</StackLayout>
