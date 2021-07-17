@@ -42,8 +42,7 @@
     "@nativescript/core": "~8.0.0",
     "@nativescript/theme": "~3.0.1",
     "rxjs": "^6.6.0",
-    "zone.js": "~0.11.4",
-    "nfl-gamepass-api": "file:~/projects/js/nfl-gamepass-api"
+    "zone.js": "~0.11.4"
   },
   "devDependencies": {
     "@angular/compiler-cli": "~12.0.0",

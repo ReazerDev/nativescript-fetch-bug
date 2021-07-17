@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { NFLGamePass } from 'nfl-gamepass-api';
 
 @Component({
     selector: 'ns-home',
@@ -13,8 +12,6 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    const pass = new NFLGamePass();
-    // console.log(pass.getSeason('2021'));
   }
 
   public test() {
