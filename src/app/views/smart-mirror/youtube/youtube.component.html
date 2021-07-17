@@ -1,0 +1,12 @@
+<toolbar title="Smart Mirror" [showBack]="true"></toolbar>
+<StackLayout>
+  <MDTextField #url hint="Video URL" variant="outline"></MDTextField>
+  <Button text="Start Video" (tap)="startVideo(url.text)" class="-primary"></Button>
+  <StackLayout class="hr-light" height="1" backgroundColor="#c2c2c2"></StackLayout>
+
+  <Button text="Pause Video" (tap)="pauseVideo()" class="-primary"></Button>
+  <Button text="Continue Video" (tap)="continueVideo()" class="-primary"></Button>
+  <StackLayout class="hr-light bottom-space" height="1" backgroundColor="#c2c2c2"></StackLayout>
+
+  <Slider value="0" minValue="0" maxValue="100" (valueChange)="changeVolume($event)"></Slider>
+</StackLayout>

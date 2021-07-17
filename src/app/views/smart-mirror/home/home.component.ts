@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
   }
 
   public toggleScreen() {
-    this.mirror$.toggleScreen().subscribe();
+    this.mirror$.post('toggle').subscribe(res => {})
   }
 
 }

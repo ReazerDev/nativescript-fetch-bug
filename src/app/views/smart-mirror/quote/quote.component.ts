@@ -17,10 +17,10 @@ export class QuoteComponent implements OnInit {
   }
 
   public customQuote(quote: string, author: string) {
-    this.mirror$.customeQuote(quote, author).subscribe();
+    this.mirror$.post('quote/self-made', { quote: quote, author: author }).subscribe();
   }
 
   public randomQuote() {
-    this.mirror$.randomQuote().subscribe();
+    this.mirror$.post('quote/random').subscribe();
   }
 }

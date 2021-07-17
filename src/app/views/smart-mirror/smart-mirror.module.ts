@@ -3,14 +3,17 @@ import { SmartMirrorRoutingModule } from "./smart-mirror-routing.module";
 import { HomeComponent } from "./home/home.component";
 import { MirrorService } from '../../services/mirror.service';
 import { QuoteComponent } from "./quote/quote.component";
+import { YoutubeComponent } from "./youtube/youtube.component";
+import { ToolbarModule } from "~/app/components/toolbar/toolbar.module";
 
 @NgModule({
     imports: [
-      SmartMirrorRoutingModule,
+      SmartMirrorRoutingModule
     ],
     declarations: [
       HomeComponent,
-      QuoteComponent
+      QuoteComponent,
+      YoutubeComponent
     ],
     providers: [MirrorService],
     schemas: [
