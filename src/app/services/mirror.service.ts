@@ -6,7 +6,7 @@ import { map } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class MirrorService {
-  private serverUrl = "https://mirror.reazer.net/api/";
+  private serverUrl = "";
 
   constructor(
     private http: HttpClient
